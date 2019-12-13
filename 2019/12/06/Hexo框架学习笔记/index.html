@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="LacrimoseLynne">
 <meta property="og:description" content="Hexo常用指令 npm install hexo -g     ————– 安装Hexo npm update hexo -g   ————– 升级 hexo init  文件名   ————–  初始化博客 文件名指定了博客存放的目录 hexo n(new) “文章名”   ———–   新建一篇文章 hexo g(generate)   ———- 生成静态网页 hexo s(server)">
 <meta property="og:locale" content="PHP">
-<meta property="og:updated_time" content="2019-12-13T00:18:39.167Z">
+<meta property="og:updated_time" content="2019-12-13T00:20:26.202Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="LacrimoseLynne" type="application/atom+xml">
@@ -97,7 +97,11 @@
 <p>hexo g(generate)   ———- 生成静态网页</p>
 <p>hexo s(server)  ———–  可以在本地预览网站效果(Hexo自带浏览器 地址: <a href="https://localhost:4000" target="_blank" rel="noopener">https://localhost:4000</a>)</p>
 <p>hexo d(deploy)  ———–  部署  </p>
-<p>hexo server #Hexo 会监视文件变动并自动更新，无须重启服务器<br>hexo server -s  ————-  静态模式<br>hexo server -p 5000   ———–  更改端口<br>hexo server -i 192.168.1.1  ————  自定义 IP<br>hexo clean  ————-  清除缓存，若是网页正常情况下可以忽略这条命令</p>
+<p>hexo server #Hexo 会监视文件变动并自动更新，无须重启服务器</p>
+<p>hexo server -s  ————-  静态模式</p>
+<p>hexo server -p 5000   ———–  更改端口</p>
+<p>hexo server -i 192.168.1.1  ————  自定义 IP</p>
+<p>hexo clean  ————-  清除缓存，若是网页正常情况下可以忽略这条命令</p>
 <p><strong>推送网站</strong></p>
 <p>根目录下的_config.yml文件为<strong>站点</strong>配置文件 </p>
 <table>
@@ -147,7 +151,10 @@
 <p>重新发布静态网站 也可以使用hexo server在本地查看效果</p>
 <p><strong>关联Hexo与Github</strong></p>
 <p>打开站点的配置文件_config.yml，翻到最后修改为：</p>
-<p>deploy:<br>type: git<br>repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git<br>branch: master</p>
+<p>deploy:</p>
+<p>type: git</p>
+<p>repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git</p>
+<p>branch: master</p>
 <p>保存站点配置文件</p>
 <p>其实就是给hexo d 这个命令做相应的配置，让hexo知道你要把blog部署在哪个位置，很显然，我们部署在我们GitHub的仓库里。最后安装Git部署插件，输入命令：</p>
 <p><strong>npm install hexo-deployer-git –save</strong></p>
